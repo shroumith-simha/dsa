@@ -17,8 +17,10 @@ day -> activity = (char * ) malloc(sizeof(char) * 100);
 // Assuming activity descriptions are less than 100 characters
 // Input the day details
 printf("Enter the day name:");
-scanf("%s", day -> dayName);printf("Enter the date:");
-scanf("%d", & day -> date);printf("Enter the activity for the day:");
+scanf("%s", day -> dayName);
+printf("Enter the date:");
+scanf("%d", & day -> date);
+printf("Enter the activity for the day:");
 scanf(" %[^\n]s", day -> activity); // Read the entire line, including spaces
 }
 // Function to read data from the keyboard and create the calendar
